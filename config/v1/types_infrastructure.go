@@ -353,7 +353,6 @@ type ExternalPlatformStatus struct {
 	// cloudControllerManager contains settings specific to the external Cloud Controller Manager (a.k.a. CCM or CPI).
 	// When omitted, new nodes will be not tainted
 	// and no extra initialization from the cloud controller manager is expected.
-	// +openshift:enable:FeatureSets=TechPreviewNoUpgrade
 	// +optional
 	CloudControllerManager CloudControllerManagerStatus `json:"cloudControllerManager"`
 }
